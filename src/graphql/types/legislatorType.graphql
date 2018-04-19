@@ -1,7 +1,7 @@
 type Legislator {
   id: Int!
-  nome: String!
   uri: String!
+  nome: String!
   siglaPartido: String!
   uriPartido: String!
   siglaUf: String!
@@ -12,8 +12,15 @@ type Legislator {
 
 type Query {
   legislators(
+    id: String
     nome: String
-    ordenarPor: String
+    idLegislatura: Int
+    siglaUf: String
     siglaPartido: String
+    siglaSexo: String
+    pagina: Int
+    itens: Int
+    ordenarPor: String
+
   ): [Legislator]
 }

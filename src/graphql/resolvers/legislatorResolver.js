@@ -3,13 +3,10 @@ const axios = require('axios')
 module.exports = {
   Query: {
     legislators: async (obj, args, context, info) => {
-      const { nome, ordenarPor, siglaPartido } = args
       return axios
         .get('https://dadosabertos.camara.leg.br/api/v2/deputados', {
           params: {
-            nome,
-            ordenarPor,
-            siglaPartido
+            ...args
           }
         })
         .then(function(response) {
