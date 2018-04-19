@@ -1,0 +1,34 @@
+{
+  "name": "api-camara-graphql",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": "8.5.0"
+  },
+  "scripts": {
+    "compile": "",
+    "start": "node src/index.js"
+  },
+  "description": "A API using GraphQL for Brazilian Camara dos Deputados",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Caio Flores",
+  "license": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "graphql": "^0.13.2",
+    "graphql-yoga": "^1.8.5"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "prettier": "^1.12.1"
+  }
+}
