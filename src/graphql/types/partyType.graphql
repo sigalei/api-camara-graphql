@@ -1,0 +1,6 @@
+type Party {
+  id: Int!
+  sigla: String!
+  nome: String!
+  uri: String!
+}
