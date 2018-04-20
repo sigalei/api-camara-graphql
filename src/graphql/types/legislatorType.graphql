@@ -1,13 +1,24 @@
 type Legislator {
+  cpf: String!
+  dataFalecimento: String
+  dataNascimento: String!
+  escolaridade: String!
   id: Int!
-  uri: String!
-  nome: String!
-  siglaPartido: String!
-  uriPartido: String!
-  siglaUf: String!
   idLegislatura: Int!
-  urlFoto: String!
+  municipioNascimento: String!
+  nome: String!
+  nomeCivil: String!
   partido: [Party]
+  redeSocial: String!
+  sexo: String!
+  siglaPartido: String!
+  siglaUf: String!
+  ufNascimento: String!
+  ultimoStatus: LastStatus!
+  uri: String!
+  uriPartido: String!
+  urlFoto: String!
+  urlWebsite: String!
 }
 
 type Query {
