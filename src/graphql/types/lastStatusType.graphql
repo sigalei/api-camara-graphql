@@ -1,0 +1,16 @@
+type LastStatus {
+  condicaoEleitoral: String!
+  data: String!
+  descricao: String!
+  gabinete: [Chamber]
+  id: Int!
+  idLegislatura: Int!
+  nome: String!
+  nomeEleitoral: String!
+  siglaPartido: String!
+  siglaUf: String!
+  situacao: String!
+  uri: String!
+  uriPartido: String!
+  urlFoto: String!
+}

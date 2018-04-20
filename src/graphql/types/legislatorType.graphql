@@ -1,19 +1,37 @@
 type Legislator {
+  cpf: String!
+  dataFalecimento: String
+  dataNascimento: String!
+  escolaridade: String!
   id: Int!
-  nome: String!
-  uri: String!
-  siglaPartido: String!
-  uriPartido: String!
-  siglaUf: String!
   idLegislatura: Int!
-  urlFoto: String!
+  municipioNascimento: String!
+  nome: String!
+  nomeCivil: String!
   partido: [Party]
+  redeSocial: String!
+  sexo: String!
+  siglaPartido: String!
+  siglaUf: String!
+  ufNascimento: String!
+  ultimoStatus: LastStatus!
+  uri: String!
+  uriPartido: String!
+  urlFoto: String!
+  urlWebsite: String!
 }
 
 type Query {
   legislators(
+    id: String
     nome: String
-    ordenarPor: String
+    idLegislatura: Int
+    siglaUf: String
     siglaPartido: String
+    siglaSexo: String
+    pagina: Int
+    itens: Int
+    ordenarPor: String
+
   ): [Legislator]
 }

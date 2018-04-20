@@ -1,0 +1,8 @@
+type Chamber {
+  andar: String!
+  email: String!
+  nome: String!
+  predio: String!
+  sala: String!
+  telefone: String!
+}
