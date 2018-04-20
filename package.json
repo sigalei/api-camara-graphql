@@ -7,7 +7,7 @@
   },
   "scripts": {
     "compile": "",
-    "start": "node src/index.js"
+    "start": "node index.js"
   },
   "description": "A API using GraphQL for Brazilian Camara dos Deputados",
   "repository": {
